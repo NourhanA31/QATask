@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Login Test]">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="https://beta.caspar-health.com/en/#/user/sign_in"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="login.AppTest">
+        <methods>
+          <include name="Close"/>
+          <include name="Startup"/>
+          <include name="addPatient"/>
+        </methods>
+      </class> <!-- login.AppTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Login Test] -->
